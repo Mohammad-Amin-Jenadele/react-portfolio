@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+#projects {
+    scroll-margin-top: 75px;
+}
+
+@media (max-width: 767px) {
+    #projects {
+        scroll-margin-top: 119px;
+    }
+}
