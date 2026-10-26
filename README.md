@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# React Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive personal portfolio built with **React and Chakra UI** to showcase my projects, technical skills, and frontend development experience.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This project is a personal portfolio website designed to present my work and provide a way for visitors, recruiters, and potential collaborators to contact me.
 
-### `npm start`
+The application uses reusable React components, responsive layouts, and a custom theme context to create an interactive user experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Responsive Design:** Adapts to different screen sizes.
+- **Dark and Light Mode:** Switch between themes using a custom React Context.
+- **Project Showcase:** Displays selected projects in reusable cards.
+- **Smooth Navigation:** Navigate between portfolio sections using the header.
+- **Sticky Header:** Keeps the navigation visible while scrolling.
+- **Contact Form:** Includes name, email address, enquiry type, and message fields.
+- **Form Validation:** Uses Formik and Yup to manage form values and validate user input.
+- **Social Links:** Provides quick access to email, GitHub, and LinkedIn.
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React** — Component-based user interface development.
+- **JavaScript (ES6+)** — Application logic and interactivity.
+- **Chakra UI v3** — UI components and responsive styling.
+- **Formik** — Form state management and submission handling.
+- **Yup** — Form validation.
+- **HTML5 and CSS3** — Web structure and styling.
+- **Create React App** — Development server and production build tooling.
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```text
+react-portfolio/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── assets/
+│   │   ├── Context/
+│   │   │   └── ThemeContext.js
+│   │   ├── Header.js
+│   │   ├── LandingSection.js
+│   │   ├── ProjectsSection.js
+│   │   └── ContactMe.js
+│   ├── App.css
+│   ├── App.js
+│   └── index.js
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## View the Website
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Option 1: Run Locally
 
-### `npm run eject`
+You can run the application on your computer by following these steps.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Prerequisites**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Node.js and npm](https://nodejs.org/)
+- [Git](https://git-scm.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**1. Clone the repository**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/Mohammad-Amin-Jenadele/react-portfolio.git
+```
 
-## Learn More
+**2. Navigate to the project directory**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+cd react-portfolio
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**3. Install dependencies**
 
-### Code Splitting
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**4. Start the development server**
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**5. Open the website**
 
-### Making a Progressive Web App
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The development server will automatically reload the page when you make changes to the source code.
 
-### Advanced Configuration
+### Option 2: View the Live Website
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+A live demo link will be added once the application is deployed.
 
-### Deployment
+The GitHub repository contains the source code; it does not automatically host the running React application. Until deployment, use the local setup instructions above to view the website.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Form Submission
 
-### `npm run build` fails to minify
+The contact form currently demonstrates frontend form handling and validation with Formik and Yup. Its submission handler logs the submitted values to the browser console.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A backend or form-handling service is required to deliver messages or store submissions permanently.
+
+## Production Build
+
+To generate an optimized production build, run:
+
+```bash
+npm run build
+```
+
+The generated files will be placed in the `build/` directory and can be deployed to a compatible static hosting service.
+
+## Future Improvements
+
+- Deploy the portfolio and add a live demo link.
+- Integrate the contact form with a backend or email service.
+- Expand the project showcase with additional projects and demonstrations.
+
+## License
+
+This project is available under the MIT License. See the [LICENSE](LICENSE) file for details.
